@@ -1,0 +1,32 @@
+server:
+  port: 8090
+spring:
+  data:
+    mongodb:
+      uri: mongodb://username:passwork@localhost:27017/local
+
+#log
+logging:
+  file: violation-applet.log
+  
+  
+
+violation: 
+  server:
+    add: http:xx.com/
+  channelId: 8
+  appId: 50
+  appKey: c8efb2ced6c44e57b09820d15c03fb26
+  
+#limit  use query  and bind car  number
+limit:
+  query: 10
+  bind: 3
+  
+  
+#lince OCR 
+ocr:
+  server:
+    add: http://xx.com/ocr
+    
+#    
